@@ -160,7 +160,7 @@ h1,h2,h3,h4,h5,h6{
 
 /*nav*/
 .nav{
-    font-size: 1vw;
+    font-size:calc(1vw + 0.2vh);
     text-transform: uppercase;
 }
 
@@ -168,7 +168,7 @@ h1,h2,h3,h4,h5,h6{
     color: white;
     text-decoration: none;
     vertical-align: top;
-    margin: 10px;
+    margin: 0.5vw;
     transition: color .2s linear;
     position: relative;
 }
@@ -197,24 +197,25 @@ h1,h2,h3,h4,h5,h6{
 .section{
     padding-top: 8vh;
     padding-bottom: 10vh;
+    background: white;
 }
 .section_header{
     margin:0 auto 9vh;
     width: 100%;
-    max-width: 45vw;
+    max-width: 45vw ;
     text-align: center; 
     
 }
 
 .section_subtitle{
-    font-size: 1.2vw;
+    font-size: calc(1.2vw + 0.6vh);
     font-family: 'Kaushan Script', cursive;
     font-weight: normal;
     margin-bottom: 2vh;
 }
 
 .section_title{
-    font-size: 1.5vw;
+    font-size: calc(1.5vw + 0.7vh);
     font-weight: 700;
     text-transform: uppercase;
     line-height: 1.6px;
@@ -232,7 +233,7 @@ h1,h2,h3,h4,h5,h6{
 
 .section_text{
     color: #999999;
-    font-size: 0.7vw;
+    font-size: calc(0.7vw + 0.2vh);
 }
 
 .about{
@@ -310,4 +311,75 @@ h1,h2,h3,h4,h5,h6{
 .stat_text{
     text-transform: uppercase;
     font-size: calc(1vw + 0.1vh);
+}
+
+/* Services */
+
+.services{
+    display: flex;
+}
+.services:last-child{
+    margin-bottom: 4vh;
+}
+.service_item{
+    flex: 1 1 0;
+}
+
+.service_item{
+    padding-left: 4.7vw;
+    padding-right: 1.5vw;
+    position: relative;
+}
+.service_title{
+    text-transform: uppercase;
+    font-size: calc(0.8vw + 0.25vh);
+    margin-bottom: 1vh;
+}
+.sevice_text{
+    color: #999999;
+    font-size: calc(0.7vw + 0.2vh);
+}
+.service_img{
+    position: absolute;
+    top: 0.6vh;
+    left: 1.5vw;
+    z-index: 1;
+
+    width: 8%;
+}
+
+.line{
+    background-color: #e5e5e5;
+    border: 0;
+    height: 1px;
+    display: block;
+    margin: calc(2vh + 2.5vw) 0;
+} 
+
+/* Devices */
+
+.section--devices{
+    background: url(../images/devices/bg.jpg) center no-repeat;
+    background-size: cover;
+    padding-bottom: 0;
+}
+.devices{
+    width: 100%;
+    max-width: 32vw;
+    margin: 0 auto;
+    position: relative;
+    height: calc(8vh + 28vw);
+}
+.iphone{
+    position: absolute;
+    z-index: 1;
+    bottom: calc(-2vh - 4vw);
+    right: 0;
+    width: calc(12vw + 1.5vh);
+}
+.ipad{
+    bottom: 0;
+    position: absolute;
+    width: calc(24vw + 1vh);  
+    
 }
